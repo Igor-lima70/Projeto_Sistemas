@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashinHairDesk", "FashinHairDesk\FashinHairDesk.csproj", "{460B859E-D52F-451D-95DD-F16810FFAFFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionHairLib", "FashionHairLib\FashionHairLib.csproj", "{3FA8D697-B3A8-4EA0-B7BD-6B1BECB35FBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{460B859E-D52F-451D-95DD-F16810FFAFFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460B859E-D52F-451D-95DD-F16810FFAFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460B859E-D52F-451D-95DD-F16810FFAFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460B859E-D52F-451D-95DD-F16810FFAFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA8D697-B3A8-4EA0-B7BD-6B1BECB35FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA8D697-B3A8-4EA0-B7BD-6B1BECB35FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA8D697-B3A8-4EA0-B7BD-6B1BECB35FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA8D697-B3A8-4EA0-B7BD-6B1BECB35FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {686A6515-BEC7-4DB6-A02C-C96EC795F46E}
+	EndGlobalSection
+EndGlobal
