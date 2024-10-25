@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using static Mysqlx.Notice.Warning.Types;
 
 
 namespace FashionLib
@@ -60,20 +61,23 @@ namespace FashionLib
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = $"select * from cargos where id = {Id}";
-            cmd.Connection.Close();
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cargo.Id = dr.GetInt32(0);
+                cargo.Cargos = dr.GetString(1);
+                
+            }
             return cargo;
         }
 
         // Função Listar
-        public static List<Cargo> ObterPorLista(string? cargos = "")
+        public static List<Cargo> ObterPorLista()
         {
             List<Cargo> lista = new();
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.Text;
-            if (cargos == "")
-            {
-                cmd.CommandText = "select * from cargos order by cargo";
-            }
+            cmd.CommandText = "select * from cargos";
             var dr = cmd.ExecuteReader();
             while (dr.Read())
             {
